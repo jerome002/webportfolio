@@ -1,5 +1,9 @@
 from flask import Flask, render_template
-
+import os
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+# Initialize Flask app
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,6 +25,6 @@ def contact():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
+app.config['SECRET_KEY'] = os.getenv("SECRET_KEY", "default-if-not-set")
 
 
