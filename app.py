@@ -21,7 +21,7 @@ def projects():
         {"title": "Chat Application", "description": "Real-time chat app using WebSockets.", "link": "#"},
         {"title": "Blog Platform", "description": "A blogging platform with user authentication.", "link": "#"},
     ]
-    return render_template("projects.html ", name="Jerome Kapkor", projects=projects, current_year=datetime.now().year)
+    return render_template("projects.html", name="Jerome Kapkor", projects=projects, current_year=datetime.now().year)
 @app.route("/about")
 def about():
     return render_template("about.html", name="Jerome Kapkor", current_year=datetime.now().year)
