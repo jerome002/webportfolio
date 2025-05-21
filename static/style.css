@@ -1,0 +1,280 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #18bc9c;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --cta-green: #28a745;
+  --cta-green-dark: #218838;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Reusable button classes */
+.btn,
+.cta-button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #00e676;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #00c853;
+}
+
+.cta-button {
+  background-color: green;
+}
+
+.cta-button:hover {
+  background-color: darkgreen;
+}
+
+.btn {
+  background-color: var(--cta-green);
+}
+
+.btn:hover {
+  background-color: var(--cta-green-dark);
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1c1c1c, #343a40);
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #00e676;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin: 20px auto;
+  max-width: 700px;
+  color: #ddd;
+}
+
+/* About */
+.about-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+
+.about-section,
+.skills-section,
+.education-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.about-section h1,
+.skills-section h2,
+.education-section h2 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: #f0f0f0;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.education-entry {
+  margin-bottom: 25px;
+}
+
+.education-entry h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.institution {
+  font-style: italic;
+  color: #666;
+}
+
+.duration {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+
+/* Contact */
+.contact-section {
+  max-width: 800px;
+  margin: 100px auto 0;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1b5e20;
+}
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.navbar-custom {
+  background-color: #f8f9fa; /* light background, optional */
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: #198754 !important; /* Bootstrap green */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #145c32 !important; /* darker green on hover */
+}
+.navbar-emerald {
+  background-color: #2ecc71;
+}
+
+.navbar-emerald .nav-link,
+.navbar-emerald .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-emerald .nav-link:hover {
+  color: #dfffe6;
+  text-decoration: underline;
+}
+
