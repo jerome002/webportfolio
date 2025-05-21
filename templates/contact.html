@@ -1,27 +1,21 @@
-{% extends 'base.html' %}
-
-{% block title %}Contact - My Portfolio{% endblock %}
-
+{% extends "base.html" %}
+{% block title %}Contact Me{% endblock %}
 {% block content %}
-<section id="contact" class="bg-light py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Contact Me</h2>
-    <p class="mb-3">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+<section class="contact-section">
+  <h2 style=" text-align: center;">Get in Touch</h2>
+<p>
+    I'm always excited to <strong>collaborate</strong>  on impactful projects, open to <strong>freelance opportunities</strong>, and available to be <strong>hired for remote or full-time roles</strong>. 
+    If you have a project in mind or just want to say hello, feel free to connect!
+  </p>
+  <div class="cta-buttons">
+    
+    <a href="mailto:jkapkor@gmail.com" class = "btn">Email Me</a>
 
-    <div class="d-flex justify-content-center gap-4">
-      <a href="https://www.linkedin.com/in/jerome-kapkor-6640b3191/" target="_blank" class="text-decoration-none" aria-label="LinkedIn">
-        <i class="fab fa-linkedin fa-2x text-primary"></i>
-      </a>
-      <a href="https://github.com/jerome002" target="_blank" class="text-decoration-none" aria-label="GitHub">
-        <i class="fab fa-github fa-2x text-dark"></i>
-      </a>
-      <a href="mailto:jkapkor@gmail.com" class="text-decoration-none" aria-label="Email">
-        <i class="fas fa-envelope fa-2x text-danger"></i>
-      </a>
-    </div>
-  </div>
+    <a href="https://www.linkedin.com/in/" class="btn">LinkedIn</a>
+    <a href="https://x.com/GKapkor" class="btn">X (Twitter)</a>
 </section>
 {% endblock %}
+
 
 
 

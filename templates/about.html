@@ -1,28 +1,50 @@
 {% extends "base.html" %}
-
-{% block title %}About Me - Jerome{% endblock %}
-
+{% block title %}About Me{% endblock %}
 {% block content %}
-    <section class="about-me">
-        <div class="container">
-            <div class="profile-photo">
-                <img src="{{ url_for('static', filename='profile.jpeg') }}" alt="Jerome's Profile Photo">
-            </div>
-            <div class="content">
-                <h1>Hello, I'm Jerome!</h1>
-                <p class="title">Full-stack Developer & Founder of G-Rome Technologies</p>
-                <p>
-                    As a passionate full-stack developer, I specialize in creating responsive, user-friendly web applications. 
-                    I work with cutting-edge technologies like Flask, HTML, CSS, Bootstrap, and JavaScript to build custom solutions 
-                    for businesses and startups.
-                </p>
-                <p>
-                    My mission is simple: to provide ideal IT solutions that empower businesses and deliver high-quality software products. 
-                    Whether you're looking to launch a new project or optimize an existing one, I’m here to bring your vision to life.
-                </p>
-               <a href="{{ url_for('contact') }}" class="cta-button">Get in Touch</a>
 
-            </div>
-        </div>
-    </section>
+<section class="about-section">
+  <h1>Hello, I’m a Passionate Software Developer</h1>
+  <p>I specialize in building full-stack applications with Python, JavaScript, and modern frameworks. I enjoy solving complex problems and building clean, efficient, and scalable software solutions.</p>
+</section>
+
+
+<section class="education-section">
+  <h2>Education</h2>
+
+  <div class="education-entry">
+    <h3>Bachelor of Science in Computer Science</h3>
+    <div class="institution">Masinde Muliro University of Science & Technology</div>
+    <div class="duration">Graduated: 2021</div>
+  </div>
+
+  <div class="education-entry">
+    <h3>Software Engineering</h3>
+    <div class="institution">ALX Africa</div>
+    <div class="duration">Completed: 2023</div>
+  </div>
+
+  <div class="education-entry">
+    <h3>Full-Stack Web Development Bootcamp</h3>
+    <div class="institution">PowerLearn Project Africa</div>
+    <div class="duration">Completed: 2025</div>
+  </div>
+  <section class="skills-section">
+  <h2>Skills & Technologies</h2>
+  <ul class="skills-list">
+    <li>Python / Flask</li>
+    <li>JavaScript / ES6+</li>
+    <li>React / Node.js / Express</li>
+    <li>HTML / CSS / Bootstrap</li>
+    <li>SQL / MySQL</li>
+    <li>Version Control (Git & GitHub)</li>
+  </ul>
+</section>
+
+    
+</section>
+ <div class="cta-buttons">
+    <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
+    <a href="{{ url_for('contact') }}" class="btn">Hire Me</a>
+  </div>
+
 {% endblock %}
