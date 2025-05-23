@@ -1,24 +1,35 @@
 {% extends 'base.html' %}
 {% block content %}
 <section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">My Projects</h2>
-        <div class="row g-4">
-            {% for project in projects %}
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ project.title }}</h5>
-                        <p class="card-text">{{ project.description }}</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="{{ project.link }}" class="btn btn-primary" target="_blank">View</a>
-                    </div>
-                </div>
+    <div class="container my-5">
+  <div class="row">
+    {% for project in projects %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{ project.title }}</h5>
+            <ul class="mb-3">
+              {% for point in project.points %}
+                <li>{{ point }}</li>
+             {% endfor %}
+            </ul>
+                          <div class="mb-2">
+            {% for badge in project.badges %}
+            <span class="badge bg-secondary me-1">{{ badge }}</span>
+             {% endfor %}
             </div>
-            {% endfor %}
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="{{ project.link }}" class="btn btn-sm btn-outline-primary" target="_blank">View Project</a>
+          </div>
         </div>
-    </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+        
+    
 </section>
 {% endblock %}
 
