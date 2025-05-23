@@ -53,8 +53,8 @@ def projects():
         "points": [
             "Multi-section website for a restaurant",
             "Displays menu, about info, and contact details",
-            "Responsive design using HTML, CSS, JavaScript"
-            "Built with:"
+            "Responsive design using:"
+           
         ],
         "badges": ["Flask", "HTML5", "CSS3", "JavaScript", "Bootstrap 5"],
         "link": "#"
