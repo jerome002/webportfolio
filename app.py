@@ -30,11 +30,16 @@ def projects():
     {
         "title": "COVID-19 Data Tracker",
         "points": [
+            "Data cleaning and preprocessing of global COVID-19 statistics",
+            "Time-series analysis of confirmed cases, deaths, and vaccination rates",
+            "Comparative insights across East African countries",
+            "Informative visualizations that highlight trends and anomalies",
             "Visualizes global COVID-19 stats with charts",
             "Includes downloadable reports",
+
             "Built with:"
         ],
-        "badges": ["Flask", "Python", "Pandas", "Plotly", "Data Analysis"],
+        "badges": ["Flask", "Python", "Pandas", "Plotly", "Matplotlib","Jupyter","Seaborn","Data Analysis"],
         "link": "https://github.com/jerome002/Covid-19-Data-Tracker-project.git"
     },
     {
@@ -43,6 +48,7 @@ def projects():
             "User login and account management",
             "Deposit, withdraw, and view transaction history",
             "Export to PDF/CSV, admin dashboard"
+
             "Built with:"
         ],
         "badges": ["Flask", "MySQL", "Flask-WTF", "Bootstrap 5", "Authentication"],
