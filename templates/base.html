@@ -10,6 +10,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -29,6 +32,8 @@
     <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
     <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Projects</a></li>
     <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='resume.pdf') }}" download class="btn btn-primary">
+        Download Resume </a></li>
   </ul>
 </div>
 

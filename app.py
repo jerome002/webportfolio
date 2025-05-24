@@ -12,7 +12,7 @@ app.config['SECRET_KEY'] = os.getenv("SECRET_KEY", "fallback_secret_key")
 
 @app.route("/")
 def home():
-   return render_template("index.html", name="Jerome Kapkor", current_year=datetime.now().year)
+   return render_template("index.html", name="Jerome Kapkor", current_year= datetime.now().year)
 @app.route("/projects")
 def projects():
     

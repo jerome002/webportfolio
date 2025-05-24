@@ -2,14 +2,14 @@
 {% block content %}
 <section class="py-5 text-center bg-light">
     <div class="container">
-        <h1 class="display-4 fw-bold">Hi, I'm {{ name }}</h1>
-        <p class="lead">Founder of G-ROME TECHNOLOGIES | Full-Stack Developer</p>
-        <p>I create reliable and scalable web apps using Python (Flask), JavaScript, and Web Technologies.</p>
+        <h1 class="display-4">Hi, I'm {{ name }}</h1>
+        <h6 class="display-4"> Full-Stack Web Developer</h6>
+        <p class="lead text-danger">Let's work together to bring your ideas to life!</p>
     </div>
     <div class="container">
-      
-        <a href="{{url_for('projects')}}" class="btn btn-secondary">My Projects</a>
-        <a href="{{url_for('contact')}}" class="btn btn-secondary">Contact Me</a>
+        <a href="{{url_for('contact')}}" class="btn btn-secondary">Hire Me</a>
+       
+
     </div>
 </section>
 {% endblock %}
