@@ -2,11 +2,12 @@
 {% block content %}
 <section class="py-5 text-center bg-light">
     <div class="container">
-        <h1 class="display-4">Hi, I'm {{ name }}</h1>
-        <h6 class="display-4"> Full-Stack Web Developer</h6>
-        <p class="lead text-danger">Let's work together to bring your ideas to life!</p>
+        <h1 class="display-2">Hi, I'm {{ name }}</h1>
+        <p class="display-4"> Full-Stack Software Developer</p>
+        <p class="display-4">Let's work together to bring your ideas to life!</p>
+        
     </div>
-   
+   <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg mt-3">Know more about me</a>
 </section>
 {% endblock %}
 

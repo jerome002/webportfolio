@@ -22,7 +22,7 @@ def projects():
         "points": [
             "Responsive personal website to showcase my work",
             "Includes About, Projects, and Contact pages",
-            "Built with:"
+            "Devoloped using:"
         ],
         "badges": ["Flask", "HTML5", "CSS3", "Bootstrap 5", "Jinja2"],
         "link": "https://jeromeportfolio-com.onrender.com/"
@@ -37,7 +37,7 @@ def projects():
             "Visualizes global COVID-19 stats with charts",
             "Includes downloadable reports",
 
-            "Built with:"
+            "Tech Stack used:"
         ],
         "badges": ["Flask", "Python", "Pandas", "Plotly", "Matplotlib","Jupyter","Seaborn","Data Analysis"],
         "link": "https://github.com/jerome002/Covid-19-Data-Tracker-project.git"
@@ -49,7 +49,7 @@ def projects():
             "Deposit, withdraw, and view transaction history",
             "Export to PDF/CSV, admin dashboard"
 
-            "Built with:"
+            "Tech Stack used:"
         ],
         "badges": ["Flask", "MySQL", "Flask-WTF", "Bootstrap 5", "Authentication"],
         "link": "https://github.com/jerome002/Banking-System.git"
@@ -77,6 +77,9 @@ def about():
 def contact():
 
     return render_template('contact.html')
+@app.route('/services')
+def services():
+    return render_template('services.html', name="Jerome Kapkor", current_year=datetime.now().year) 
 
 if __name__ == '__main__':
     app.run(debug=True)

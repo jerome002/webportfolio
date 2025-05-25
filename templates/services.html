@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}Services | Jerome{% endblock %}
+{% block content %}
+
+<h2 class="text-center mt-5 text-danger">My Services</h2>
+<p class=" text-center mb-5">
+    As a passionate and detail-oriented developer, I provide end-to-end solutions tailored to your business needs. From backend systems to responsive web designs, here’s what I offer:
+</p>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success">Web Development</h5>
+                <ul>
+                    <li>HTML, CSS, JavaScript, Bootstrap</li>
+                    <li>Flask (Python) backend development</li>
+                    <li>REST APIs integration</li>
+                    <li>Mobile-responsive design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success">Custom Software Solutions</h5>
+                <ul>
+                    <li>Tailor-made business systems</li>
+                    <li>Inventory management (restaurant/retail)</li>
+                    <li>Real-time tools using Supabase</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success"> Freelance & Remote Development</h5>
+                <ul>
+                    <li>Clean, maintainable code</li>
+                    <li>Client-centered workflow</li>
+                    <li>Ideal for startups/SMEs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success">Database Design & Integration</h5>
+                <ul>
+                    <li>MySQL, Supabase, PostgreSQL</li>
+                    <li>Data security and optimization</li>
+                    <li>Efficient SQL querying</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success">Full-Stack Project Consulting</h5>
+                <ul>
+                    <li>Planning to deployment</li>
+                    <li>GitHub version control</li>
+                    <li>Hosting: Vercel, Render</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success">Data Visualization & Reporting</h5>
+                <ul>
+                    <li>Dashboards using Pandas & Matplotlib</li>
+                    <li>Seaborn, Plotly (optional)</li>
+                    <li>CSV/PDF export support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-5">
+    <a href="{{url_for('contact')}}" class="btn btn-primary btn-lg me-3">Hire Me</a>
+    <a href="{{url_for('projects')}}" class="btn btn-outline-secondary btn-lg">View My Work</a>
+</div>
+
+{% endblock %}
