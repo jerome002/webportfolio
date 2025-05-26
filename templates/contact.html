@@ -1,31 +1,48 @@
 {% extends "base.html" %}
 {% block title %}Contact Me{% endblock %}
 {% block content %}
-<section class="contact-section">
-  <h2 class="section-title">Get in Touch</h2>
-<p>
-    I'm always ready to <strong>collaborate</strong>  on impactful projects, open to <strong>freelance opportunities</strong>, and available to be <strong>hired for remote or full-time roles</strong>. 
+<section class="contact-section container py-5">
+  <h2 class="section-title text-center mb-4">Get in Touch</h2>
+
+  <p class="text-center mx-auto" style="max-width: 600px;">
+    I'm always ready to <strong>collaborate</strong> on impactful projects, open to <strong>freelance opportunities</strong>, 
+    and available to be <strong>hired for remote or full-time roles</strong>. 
     If you have a project in mind or just want to say hello, feel free to connect!
   </p>
-  <div class="social-icons text-center mt-4">
-  <a href="https://github.com/jerome002" target="_blank" class="social-icon">
-    <i class="fab fa-github"></i>
-  </a>
-    <a href="mailto:jkapkor@gmail.com" target="_blank" class="social-icon">
-    <i class="fas fa-envelope"></i>
-  </a>
 
-    </a>
-    <a href="https://www.linkedin.com/in/jerome-kapkor-6640b3191/" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://twitter.com/jerome002" target="_blank" class="social-icon">
-    <i class="fab fa-twitter"></i>
-    </a>
+  <!-- Contact Info -->
+  <div class="text-center mt-4 mb-5">
+    <div class="d-flex justify-content-center flex-column align-items-center gap-3">
+      <div>
+        <i class="fas fa-envelope text-primary me-2"></i>
+        <a href="mailto:jkapkor@gmail.com">jkapkor@gmail.com</a>
+      </div>
+      <div>
+        <i class="fas fa-phone-alt text-success me-2"></i>
+        <span>+254 7455976</span>
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt text-danger me-2"></i>
+        <span>Nairobi, Kenya</span>
+      </div>
     </div>
+  </div>
 
+  <!-- Social Icons -->
+  <div class="social-icons text-center">
+    <a href="https://github.com/jerome002" target="_blank" class="social-icon mx-2" aria-label="GitHub" rel="noopener noreferrer">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/jerome-kapkor-6640b3191/" target="_blank" class="social-icon mx-2" aria-label="LinkedIn" rel="noopener noreferrer">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://twitter.com/jerome002" target="_blank" class="social-icon mx-2" aria-label="Twitter" rel="noopener noreferrer">
+      <i class="fab fa-twitter fa-2x"></i>
+    </a>
+  </div>
 </section>
 {% endblock %}
+
 
 
 
