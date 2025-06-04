@@ -1,6 +1,6 @@
 #  My Flask Portfolio
 
-A professional portfolio website built with Flask, HTML, CSS, and Bootstrap to showcase your skills, projects, and contact information. Deployed on [Render](https://render.com).
+A professional portfolio website built with Flask, HTML, CSS, and Bootstrap to showcase my skills, projects, and contact information. Deployed on [Render](https://render.com).
 
 ##  Live Demo
 
